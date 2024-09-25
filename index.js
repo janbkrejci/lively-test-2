@@ -1,7 +1,7 @@
 'format esm';
-//import {AMorph} from 'ui/a-morph.cp.js'
+export * from './ui/my-rectangle.cp.js';
+import { MyRectangle } from './ui/my-rectangle.cp.js';
+
 export async function main () {
-    // THIS FUNCTION IS THE ENTRY POINT IN THE BUNDLED APPLICATION!
-  //new AMorph().openInWorld();
-  alert('hello')
+  new MyRectangle().openInWorld();
 }
