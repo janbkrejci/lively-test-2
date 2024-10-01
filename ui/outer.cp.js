@@ -1,7 +1,6 @@
 import { ConstraintLayout, ShadowObject, component } from 'lively.morphic/index.js';
 import { pt } from 'lively.graphics/geometry-2d.js';
 import { Color } from 'lively.graphics/color.js';
-import { connect } from 'lively.bindings';
 
 'format esm';
 const Outer = component({
@@ -31,7 +30,5 @@ const Outer = component({
     this.extent = $world.extent;
   }
 });
-
-connect($world, 'extent', Outer, 'relayout');
 
 export { Outer };
